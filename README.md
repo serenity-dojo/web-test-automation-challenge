@@ -1,25 +1,20 @@
-# Serenity JUnit Starter project
+# Web Test Automation Challenge
 
-Get started quickly with Serenity BDD and JUnit 5 with this simple starter project. 
+The aim of this challenge is to create a test automation framework from scratch using Serenity BDD and JUnit 5, and implement a full end-to-end scenario. You will be writing tests for the https://magento.softwaretestingboard.com/ sample site.
 
-## Get the code
 
-Click on the [Use This Template button](https://github.com/serenity-bdd/serenity-junit-starter/generate) to create a new project in your own Github account. 
+## Step 1) Create a project from the Github template
 
-Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-starter/archive/master.zip) file.
+## Step 2) Create a test case that checks the contents of the main menu
+	
+	- Open the application home page
+	- Locate and retrieve the texts of the top level menu items
+	- Check that the list contains "What's New","Women", "Men","Gear","Training" and "Sale"
 
-## Running the tests under Maven
-
-The template project comes with both Maven and Gradle build scripts. To run the tests with Maven, open a command window and run:
-
-    mvn clean verify
-
-## Use Gradle
-
-For gradle, pen a command window and run:
-
-    gradlew test 
-
-## Viewing the reports
-
-Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
+## Step 3) Create a test that 
+	- Open the application home page
+	- Add the Fusion Backpack to the shopping cart
+	- Open the cart and proceed to checkout
+	- Enter the customer details and pick a shipping method
+	- Place order
+	- Check that thank you message and order number is displayed
